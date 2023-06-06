@@ -60,7 +60,7 @@ def clothing_wear():
 
 
 def accessories():
-    if get_weathr() == 'Kiša' or get_weathr() == 'Slaba kiša' or get_weathr() == 'Pljusak kiše':
+    if get_weathr() == 'Kiša' or get_weathr() == 'Slaba kiša' or get_weathr() == 'Pljusak kiše' or get_weathr() == 'Pljuskovi u blizini':
         return 'Umbrella'
     elif get_weathr() == 'Sunčano':
         return 'Sunglasses'
