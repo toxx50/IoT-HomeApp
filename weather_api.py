@@ -64,7 +64,7 @@ def accessories():
         return 'Umbrella'
     elif get_weathr() == 'Sunčano':
         return 'Sunglasses'
-    elif get_weathr() == 'Oblačno':
+    elif get_weathr() == 'Oblačno' or get_weathr()=='Pretežito oblačno':
         return 'Sunglasses & Umbrella'
     elif get_weathr() == 'Snijeg':
         return 'Hat & Gloves'
