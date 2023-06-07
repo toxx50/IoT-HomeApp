@@ -25,9 +25,6 @@ class WeatherData(Base):
         self.humidity = hum
         self.air_pressure = ap
 
-    def __repr__(self):
-        return f"{self.date} {self.time} {self.temperature} {self.humidity} {self.air_pressure}"
-
 
 engine = create_engine("sqlite:///db-temp/users.db", echo=False)
 Base.metadata.create_all(bind=engine)
