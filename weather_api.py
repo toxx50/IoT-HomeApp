@@ -68,6 +68,8 @@ def accessories():
         return 'Sunglasses & Umbrella'
     elif get_weathr() == 'Snijeg':
         return 'Hat & Gloves'
+    else:
+        return 'None'
 
 
 
