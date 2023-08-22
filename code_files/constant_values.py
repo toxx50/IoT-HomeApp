@@ -1,4 +1,5 @@
 from datetime import datetime
+import PIL
 
 
 # MAIN FRAME
