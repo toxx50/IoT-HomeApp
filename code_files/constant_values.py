@@ -1,8 +1,5 @@
-from PIL import ImageTk, Image
-import tkinter
 from datetime import datetime
-import time
-import sys
+
 
 # MAIN FRAME
 

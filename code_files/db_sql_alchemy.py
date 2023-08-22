@@ -1,8 +1,7 @@
 from sqlalchemy import create_engine, ForeignKey, Column, String, Integer, CHAR
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
-from datetime import *
-from time import *
+
 
 
 Base = declarative_base()
