@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-from constant_values import *
+from code_files.constant_values import *
 
 
 page = requests.get(URL)
@@ -47,7 +47,7 @@ temperature_degree = soup.find('span', class_='CurrentConditions--tempValue--MHm
 TEMPERATURE = int(temperature_degree[:-1])
 def clothing_wear():
     if TEMPERATURE > 21:
-        return 'T-Shirt\nShorts\nFlip\nFlops'
+        return 'T-Shirt\nShorts\nFlip Flops'
     elif TEMPERATURE < 22 and TEMPERATURE > 14:
         return 'Light jacket\nT-Shirt\nJeans\nShoes'
     elif TEMPERATURE < 15 and TEMPERATURE > 9:
@@ -62,7 +62,7 @@ def clothing_wear():
 def accessories():
     if get_weathr() == 'Kiša' or get_weathr() == 'Slaba kiša' or get_weathr() == 'Pljusak kiše' or get_weathr() == 'Pljuskovi u blizini':
         return 'Umbrella'
-    elif get_weathr() == 'Sunčano':
+    elif get_weathr() == 'Sunčano' or get_weathr() == 'Svijetlo':
         return 'Sunglasses'
     elif get_weathr() == 'Oblačno' or get_weathr()=='Pretežito oblačno':
         return 'Sunglasses & Umbrella'

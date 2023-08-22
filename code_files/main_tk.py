@@ -1,15 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
 from tkcalendar import *
-from sqlalchemy import create_engine, ForeignKey, Column, String, Integer, CHAR
-from sqlalchemy.orm import declarative_base
-from sqlalchemy.orm import sessionmaker
-import sys
-import time
 import datetime
-from db_sql_alchemy import *
-from weather_api import *
-from constant_values import *
+from code_files.db_sql_alchemy import *
+from code_files.weather_api import *
+from code_files.constant_values import *
 
 
 
@@ -43,11 +38,11 @@ class Menu(ttk.Frame):
         main_frame.pack_propagate(False)
         main_frame.configure(width=500, height=500)
 
-        img = Image.open('C:/Users/Korisnik/PycharmProjects/IoT-HomeApp/files_img/weather-forecasting.png')
+        img = Image.open(CLOUD_PATH)
         img = img.resize((150, 150))
         IMG = ImageTk.PhotoImage(img)
 
-        img2 = Image.open('C:/Users/Korisnik/PycharmProjects/IoT-HomeApp/files_img/545546.png')
+        img2 = Image.open(CLOTH_PATH)
         img2 = img2.resize((150, 150))
         IMG2 = ImageTk.PhotoImage(img2)
 
@@ -216,5 +211,3 @@ class Menu(ttk.Frame):
 
 
 
-main_window = HomeApp()
-main_window.mainloop()

@@ -34,7 +34,7 @@ session = Session()
 
 
 
-#podatci iz baze iz baze u listi
+#podatci iz baze u listi
 users = session.query(WeatherData)
 
 
